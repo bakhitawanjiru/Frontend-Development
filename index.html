@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Development</title>
+    <style>
+            .head {
+              font-size: xx-large;
+              text-align: left;
+            }
+            .head {
+              font-family: "Kanit", serif;
+              font-weight: 500;
+              font-style: normal;
+            }
+            .header {
+              color: red;
+            }
+            .picture {
+              border-radius: 50px;
+              width: 350px;
+              align-content: center;
+            }
+            .class {
+              font-size: larger;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .button {
+              color: white;
+              background-color: red;
+              border-radius: 20px;
+              padding: 20px;
+              display: inline-block;
+              font-size: 16px;
+              width: 30%;
+              text-align: center;
+              text-decoration: none;
+              font-size: larger;
+            }
+            .grey {
+              color: #444;
+              font-size: larger;
+              text-align: center;
+            }
+            .info {
+              font-size: xx-large;
+              font-family: "Kanit", serif;
+              font-weight: 500;
+              font-style: normal;
+              text-align: center;
+              color: red;
+            }
+            .accordion {
+              background-color: #eee;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              text-align: left;
+              border: none;
+              outline: none;
+              transition: 0.4s;
+            }
+
+      .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #444
+        float; right:
+        margin-left; 5px;
+      }
+
+      .active, .accordion:hover {
+        background-color:red;
+      }
+      .div{
+        font-size: xx-large;
+        text-align: center;
+        color: #444;
+      }
+      .table{
+        border-radius: 100px;
+        border-style: solid;
+        text-align: left;
+        gap: 100px;
+      }
+      .mine{
+        font-size: xx-large;
+              font-family: "Kanit", serif;
+              font-weight: 500;
+              font-style: normal;
+              text-align: center;
+              color: red;
+
+      }
+      .info{
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .diver{
+        border-style: solid;
+        background-color: black;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large
+        
+      
+      }
+      .id{
+        background-color: red;
+        color: white;
+        font-size: larger;
+        margin: 30px;
+      }
+    </style>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+      
+
+  
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="head">
+      From Concept to Code :
+      <img
+        src="Banner-Software-Dev-Student-edited.jpeg"
+        alt="woman"
+        class="picture"
+      />
+      <div class="header">Join our Frontend Development Program!</div>
+    </div>
+
+    <span class="class">
+      From fundamentals to advanced techniques, learn web development with
+      JavaScript and React.JS.
+      <strong>Transform ideas into stunning websites and web apps,</strong>
+      become a frontend engineer or web developer.
+    </span>
+    <br />
+    <button class="button">Apply Today</button>
+
+    <h3 class="grey">Overview</h3>
+    <div class="info">Kickstart your frontend web development journey</div>
+    <button class="accordion">Why Learn Web Development today ?</button>
+    <div class="panel">
+      <p>
+        In today’s digital age, web development is a crucial skill that powers
+        the internet and drives online experiences. With businesses and
+        organisations increasingly relying on websites and web apps to
+        reach/serve their audience, the demand for skilled web developers has
+        never been higher. Learning web development equips you with the ability
+        to create dynamic, responsive, and visually appealing web applications,
+        enhancing user experiences and driving engagement. Whether you aim to
+        launch a tech career, build your own projects, or freelance, mastering
+        web development opens up a world of opportunities in the tech industry.
+      </p>
+    </div>
+
+    <button class="accordion">
+      What the Zindua Frontend Development Programme entails?
+    </button>
+    <div class="panel">
+      <p>
+        Zindua’s Frontend Development program is designed to take you from a
+        beginner to a proficient frontend developer. The program covers
+        essential technologies and tools, starting with HTML and CSS to build
+        the structure and style of web pages. You will then dive into
+        JavaScript, the backbone of interactive web development, learning how to
+        create dynamic content and enhance user interactions. The curriculum
+        culminates with React, a powerful JavaScript library for building user
+        interfaces, enabling you to develop sophisticated, scalable, and
+        high-performance web applications. Our hands-on approach ensures you
+        gain practical experience through real-world projects and collaborative
+        learning.
+      </p>
+    </div>
+
+    <button class="accordion">
+      Who is the Frontend Development Program ideal for?
+    </button>
+    <div class="panel">
+      <p>
+        This program is perfect for anyone with a passion for technology and
+        creativity, regardless of their previous experience. Aspiring web
+        developers, designers looking to enhance their technical skills, and
+        professionals seeking to transition into the tech industry will all
+        benefit from this course. No prior coding experience is necessary;
+        however, a basic understanding of computer operations will be helpful.
+        Whether you’re a recent high school graduate, university graduate,
+        career changer, or entrepreneur looking to create your own web presence,
+        Zindua’s Frontend Development program provides the knowledge and skills
+        to succeed in the dynamic field of frontend development.
+      </p>
+    </div>
+    <div class="div">Curriculum</div>
+    <div class="mine">
+      What you’ll learn in our Frontend Development Program
+    </div>
+    <p class="infom">
+      Curated from our in-depth research and experience of the most in-demand
+      skills for web development career pathways, our curriculum is broken down
+      into 3 modules encompassing the following:
+    </p>
+    <button class="accordion">Module 1:HTML,CSS and Javascript</button>
+<div class="panel">
+  <p>Learn the foundations of web development with HTML, CSS, and basic JavaScript. By the end of the module, you should be able to build static websites with HTML, CSS, and add some web interactivity with JavaScript.
+<br>
+    <strong>Dev Foundations:</strong> Git version control, Linux, and CLI/Terminal foundations <br>
+    <strong>Web Foundations:</strong> learn HTML markup and how to style web content with CSS <br>
+    <strong> Advanced CSS:</strong> Learn CSS Grid, Flexbox, and the Tailwind CSS Framework <br>
+    <strong>JavaScript Basics:</strong> core concepts of JavaScript, DOM manipulation, and event handling</p>
+</div>
+
+<button class="accordion">Module:2 Advanced Javascript programming</button>
+<div class="panel">
+  <p>Learn the advanced JavaScript programming concepts to build more complex frontend apps. By the end of module, you’ll be able to build a web app with HTML, CSS, and vanilla JavaScript. <br>
+  <strong> JavaScript Objects:</strong> Learn how to build and work with JavaScript objects with ES6 syntax <br>
+  <strong> AJAX and Fetch API: </strong>Learn asynchronous JavaScript (AJAX) and Fetch API <br>
+  <strong>  Advanced JavaScript:</strong> Object-oriented programming and test-driven development <br>
+  <strong> Deployment of Dashboards:</strong> Deploy dashboards with a coherent data story with Dash by Plotly</p>
+
+</div>
+<button class="accordion">Module 3:React Frontend Development</button>
+<div class="panel">
+  <p>Learn the React library for frontend development. By the end of the module, you should be able to build and deploy a complete frontend application with React.JS and integrate with a NoSQL databases or Firebase. <br>
+  <strong> React Foundations:</strong>  Learn JSX and how to build React functional components
+  <strong> Intermediate React:</strong>  Event handling with React, props, and React state management
+  <strong> Advanced React:</strong>  Learn React hooks and custom hooks as well as testing
+  <strong> Frontend Essentials:</strong>  Learn how to work with Graph QL and how to deploy React Apps</p>
+</div>
+</div>
+<button class="accordion">Bonus:Data Structures and Algorithms </button>
+<div class="panel">
+  <p>All Zindua programs require students to be versed with computer programming fundamentals for building efficient code and scalable solutions. In this program, here are the essential data structures and algorithms you’ll learn:
+
+    <strong>Basic Algorithms: </strong>Learn the Big-O Notation, Search, and Sorting Algorithms <br>
+    <strong>Linear Data Structures:</strong> Learn Arrays, Hash maps, Stacks, Queues, Linked Lists, Trees, and Graphs <br>
+    <strong>Non-Linear Data Structures:</strong> Trees, Graphs, and common algorithms involving trees/graphs such as pathfinding <br>
+    <strong>Note that this is a Lite core program therefore, students will not get into advanced algorithms i.e. Dynamic Programming, and Greedy Algorithms which are covered in the longer/advanced Software Engineering Core.</p>
+</div>
+</div>
+<button class="accordion">Final Capsule:Web Development Capstone </button>
+<div class="panel">
+  <p>To graduate the program, a student will be required to <strong>complete an end-to-end web development project</strong> involving building and deploying a web app with JavaScript and React.JS as well as connecting to a database or data source through GraphQL, REST API, or direct connections with a NoSQL database. Students have freedom to choose their final project based on their personal/career interests.</p>
+  </div>
+<div class="diver">Zindua your career in tech. Join our Frontend Development program today! <button class="id"> Apply Now</button></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
