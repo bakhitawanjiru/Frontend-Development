@@ -1,279 +1,805 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Development</title>
-    <style>
-            .head {
-              font-size: xx-large;
-              text-align: left;
-            }
-            .head {
-              font-family: "Kanit", serif;
-              font-weight: 500;
-              font-style: normal;
-            }
-            .header {
-              color: red;
-            }
-            .picture {
-              border-radius: 50px;
-              width: 350px;
-              align-content: center;
-            }
-            .class {
-              font-size: larger;
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-            .button {
-              color: white;
-              background-color: red;
-              border-radius: 20px;
-              padding: 20px;
-              display: inline-block;
-              font-size: 16px;
-              width: 30%;
-              text-align: center;
-              text-decoration: none;
-              font-size: larger;
-            }
-            .grey {
-              color: #444;
-              font-size: larger;
-              text-align: center;
-            }
-            .info {
-              font-size: xx-large;
-              font-family: "Kanit", serif;
-              font-weight: 500;
-              font-style: normal;
-              text-align: center;
-              color: red;
-            }
-            .accordion {
-              background-color: #eee;
-              color: #444;
-              cursor: pointer;
-              padding: 18px;
-              width: 100%;
-              text-align: left;
-              border: none;
-              outline: none;
-              transition: 0.4s;
-            }
 
-      .accordion:after {
-        content: '\02795'; /* Unicode character for "plus" sign (+) */
-        font-size: 13px;
-        color: #444
-        float; right:
-        margin-left; 5px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Development</title>
+  <style>
+    .col {
+      font-size: xx-large;
+      text-align: left;
+    }
 
-      .active, .accordion:hover {
-        background-color:red;
-      }
-      .div{
-        font-size: xx-large;
-        text-align: center;
-        color: #444;
-      }
-      .table{
-        border-radius: 100px;
-        border-style: solid;
-        text-align: left;
-        gap: 100px;
-      }
-      .mine{
-        font-size: xx-large;
-              font-family: "Kanit", serif;
-              font-weight: 500;
-              font-style: normal;
-              text-align: center;
-              color: red;
+    .col {
+      font-family: "Kanit", serif;
+      font-weight: 500;
+      font-style: normal;
+      margin: 30px;
+      font-size: xx-large;
+    }
 
-      }
-      .info{
-        font-size: larger;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .diver{
-        border-style: solid;
-        background-color: black;
-        color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: xx-large
-        
+    .header {
+      font-size: xx-large;
+      color: red;
+    }
+
+    .picture {
+      border-radius: 50px;
+      width: 400px
+    }
+
+    .class {
+      font-size: larger;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .button {
+      color: white;
+      background-color: red;
+      border-radius: 30px;
+      padding: 20px;
+      display: inline-block;
+      font-size: 16px;
+      width: 30%;
+      text-align: center;
+      text-decoration: none;
+      font-size: larger;
+    }
+
+    .larger {
+      font-size: xx-large;
+    }
+
+    .grey {
+      color: #444;
+      font-size: larger;
+      text-align: center;
+    }
+
+
+
+    .mine {
+      font-size: xx-large;
+      font-family: "Kanit", serif;
+      font-weight: 500;
+      font-style: normal;
+      text-align: center;
+      color: red;
+
+    }
+
+    .info {
+      font-size: larger;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .diver {
+      border-style: solid;
+      background-color: black;
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: xx-large
+    }
+
+    .id {
+      background-color: red;
+      color: white;
+      font-size: larger;
+      margin: 30px;
+      border
+    }
+
+
+    .btn{color: red;
+      background-color: white;
+      border-radius: 7px;
+      margin: 20px;
+    }
+
+
+    .image {
+      width: 100px;
+      gap: 100px;
+    }
+    .apply{
+      color: red;
+      background-color: white;
+      border-radius: 7px;
+      width: 300px;
+    }
+
+    .deco {
+      color: cornflowerblue;
+
+    }
+
+    .words {
+      background-color: beige;
+    }
+
+    .br {
+      color: cornflowerblue;
+      text-align: left;
+      font-size: larger;
+    }
+
+    .cho {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: xx-large;
+      text-align: left;
+      color: red;
+    }
+
+    .but {
+      border-radius: 7px;
+      background-color: red;
+      color: white;
+    }
+
+    .yes {
+      color: #0091ad;
+      text-align: left;
+      font-size: larger
+    }
+
+    .chal {
+      font-size: x-large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .the {
+      font-size: xx-large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      background-color: black;
+      border: 300px;
+    }
+
+    .you {
+      background-color: red;
+      color: white;
+      border-radius: 7px;
+    }
+
+    .story {
+      color: #0091ad;
+      font-size: larger;
+      text-align: left;
+    }
+
+    .str {
+      font-size: xx-large;
+      color: red;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .acc {
+      font-style: normal;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: larger;
+    }
+
+    .chn {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: larger;
+      background-color: beige;
+      text-align: left;
+    }
+    .card-body{
+      background-color: beige;
+    }
+    .accordion-buttoncollapsed a:hover{
+      color: red;
+
+    }
+    .cards{
+      width: 200px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Zindua.png" alt="Zindua school" class="image">
+      </a>
+
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button><br>
+        <br> <br> <br>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Financing Actions</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Financing Links</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li>
+                  <hr class="dropdown-divider"> Financing actions
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a button type="submit" class="but">Apply today</button> <a href=""></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <p>
+          From Concept to Code :
+        <div class="header">Join our Frontend Development Program!</div>
+        </p>
+        From fundamentals to advanced techniques, learn web development with JavaScript and React.JS. Transform ideas into stunning websites and web apps, become a frontend engineer or web developer.
+      </div>
+      <div class="col">
+        <img src="Banner-Software-Dev-Student-edited.jpeg" alt="woman" class="picture" />
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Why Web Development Today?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">In today’s digital age, web development is a crucial skill that powers the
+              internet and drives online experiences. With businesses and organisations increasingly relying on websites
+              and web apps to reach/serve their audience, the demand for skilled web developers has never been higher.
+              Learning web development equips you with the ability to create dynamic, responsive, and visually appealing
+              web applications, enhancing user experiences and driving engagement. Whether you aim to launch a tech
+              career, build your own projects, or freelance, mastering web development opens up a world of opportunities
+              in the tech industry.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                What Zindua Frontend Development Program entails?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Zindua’s Frontend Development program is designed to take you from a beginner
+                to a proficient frontend developer. The program covers essential technologies and tools, starting with
+                HTML and CSS to build the structure and style of web pages. You will then dive into JavaScript, the
+                backbone of interactive web development, learning how to create dynamic content and enhance user
+                interactions. The curriculum culminates with React, a powerful JavaScript library for building user
+                interfaces, enabling you to develop sophisticated, scalable, and high-performance web applications. Our
+                hands-on approach ensures you gain practical experience through real-world projects and collaborative
+                learning.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <b>Who</b>is the Frontend Development Programme Ideal for?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">This program is perfect for anyone with a passion for technology and
+                creativity, regardless of their previous experience. Aspiring web developers, designers looking to
+                enhance their technical skills, and professionals seeking to transition into the tech industry will all
+                benefit from this course. No prior coding experience is necessary; however, a basic understanding of
+                computer operations will be helpful. Whether you’re a recent high school graduate, university graduate,
+                career changer, or entrepreneur looking to create your own web presence, Zindua’s Frontend Development
+                program provides the knowledge and skills to succeed in the dynamic field of frontend development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <b class="larger"> Choose the learning schedule that best works for you</b>
+        <div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                
+                    <div class="col-md-4">
+                      <p><i class="fa-light fa-clock"></i></p>
+                    </div>
+                    <div class="col-md-8">
+                      <h5 class="card-title">Full-time schedule</h5>
+                      <p class="card-text">Ideal for learners without other work or school commitments</p>
+                    </div>
+                    <ul >
+                    <p class="card"> Graduate in <b>2.5 months</b><br>
+                      <b>35-40-hour</b> weekly commitment<br> <br>
+                      <b>In-person classes</b> on 3 weekdays; <b>live online classes</b> on 2 weekdays <br> <br>
+                      Classes from <b>9am – 2pm</b> with take-home daily challenges and weekend practice projects</li>
+                      Cohort intakes <b>every 2 months</b></p> 
+                    <button type="Apply" class="apply">Apply Now</button></ul>
+
+                  </div>
+                  <p><i class="fa-light fa-clock"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Part-time schedule</h5>
+                  <p class="card-text">Ideal for learners with additional work or school commitments.</p>
+                  <hr>
+                  <br>Graduate in 4 months <br>
+                <b>20-25-hour <b>weekly commitment <br>
+               <br> Online classes on <b>Monday to Thursday</b> evenings from <b>7pm – 9pm</b> with daily challenges <br>
+                <br>In-person classes on Saturdays from <b>10am to 2pm</b> with weekly projects afterwards <br>
+               <br> Cohort intakes every <b>5 weeks</b> </a>
+                <br>
+                <br><button type="Apply Now" class="apply">Apply Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       
-      }
-      .id{
-        background-color: red;
-        color: white;
-        font-size: larger;
-        margin: 30px;
-      }
-    </style>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
+      </div> 
+        <p class=" words"> <b> In-person classes <span class="deco">based at our Westlands/Lavington Office in
+              Nairobi.</span> Other cities from 2025.</b></p>
+        <p class="br">Curriculum</p>
+        <p class="cho">What you’ll learn in our Frontend Development Program</p>
+        <p>Curated from our in-depth research and experience of the most in-demand skills for web development career
+          pathways, our curriculum is broken down into 3 modules encompassing the following:</p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Module 1:HTML,CSS and Javascript
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong></strong>
+                <p>Learn the advanced JavaScript programming concepts to build more complex frontend apps. By the end of
+                  module, you’ll be able to build a web app with HTML, CSS, and vanilla JavaScript. <br>
+                  <strong> JavaScript Objects:</strong> Learn how to build and work with JavaScript objects with ES6
+                  syntax <br>
+                  <strong> AJAX and Fetch API: </strong>Learn asynchronous JavaScript (AJAX) and Fetch API <br>
+                  <strong> Advanced JavaScript:</strong> Object-oriented programming and test-driven development <br>
+                  <strong> Deployment of Dashboards:</strong> Deploy dashboards with a coherent data story with Dash by
+                  Plotly
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Module 2:Advanced Javascript programming
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Learn the advanced JavaScript programming concepts to build more complex frontend apps. By the end
+                    of module, you’ll be able to build a web app with HTML, CSS, and vanilla JavaScript. <br>
+                    <strong> JavaScript Objects:</strong> Learn how to build and work with JavaScript objects with ES6
+                    syntax <br>
+                    <strong> AJAX and Fetch API: </strong>Learn asynchronous JavaScript (AJAX) and Fetch API <br>
+                    <strong> Advanced JavaScript:</strong> Object-oriented programming and test-driven development <br>
+                    <strong> Deployment of Dashboards:</strong> Deploy dashboards with a coherent data story with Dash
+                    by Plotly
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Module 3:React Frontend Development
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Learn the React library for frontend development. By the end of the module, you should be able to
+                    build and deploy a complete frontend application with React.JS and integrate with a NoSQL databases
+                    or Firebase. <br>
+                    <strong> React Foundations:</strong> Learn JSX and how to build React functional components
+                    <strong> Intermediate React:</strong> Event handling with React, props, and React state management
+                    <strong> Advanced React:</strong> Learn React hooks and custom hooks as well as testing
+                    <strong> Frontend Essentials:</strong> Learn how to work with Graph QL and how to deploy React Apps
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Bonus:Data Structures and Algorithms
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>All Zindua programs require students to be versed with computer programming fundamentals for building
+                  efficient code and scalable solutions. In this program, here are the essential data structures and
+                  algorithms you’ll learn:
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
-        });
-      }
-      
+                  <strong>Basic Algorithms: </strong>Learn the Big-O Notation, Search, and Sorting Algorithms <br>
+                  <strong>Linear Data Structures:</strong> Learn Arrays, Hash maps, Stacks, Queues, Linked Lists, Trees,
+                  and Graphs <br>
+                  <strong>Non-Linear Data Structures:</strong> Trees, Graphs, and common algorithms involving
+                  trees/graphs such as pathfinding <br>
+                  <strong>Note that this is a Lite core program therefore, students will not get into advanced
+                    algorithms i.e. Dynamic Programming, and Greedy Algorithms which are covered in the longer/advanced
+                    Software Engineering Core.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapsefive">
+            Final Capsule:Web Development Capstone
+          </button>
+        </h2>
+        <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>To graduate the program, a student will be required to <strong>complete an end-to-end web development
+                project</strong> involving building and deploying a web app with JavaScript and React.JS as well as
+              connecting to a database or data source through GraphQL, REST API, or direct connections with a NoSQL
+              database. Students have freedom to choose their final project based on their personal/career interests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+
+
+
+
+    <div class="diver">Zindua your career in tech. Join our Frontend Development program today! <button class="id">
+        Apply Now</button></div>
+    <p class="yes">Testimonial</p>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <p>
+            <img src="Emelda-Photo-edited.jpeg" alt="student" class="picture" />
+        </div>
+        </p>
+      </div>
+      <div class="col">
+        <i>enjoy how the course work is structured, my Technical Mentor is super reliable and provides useful resources
+          that compliment the course work I’m doing. The support from Zindua is excellent, they have a dedicated Slack
+          channel where we ask and receive help from both the Technical Mentors and my fellow students. The projects are
+          challenging but manageable and help reinforce the material covered. I would recommend Zindua to anyone who
+          wants to kickstart their tech career and want a personalised learning experience.</i>
+        Emelda Owira, Software Engineering Graduate
+      </div>
+      <p class="chal">Your Zindua experience runs from admissions to placement
+      <p class="the">Zindua your career in tech. Join our Frontend Development program today! <br>
+        <button type="submit" class="you">Apply Now</button>
+      </p>
+      <p class="story">Financing</p>
+      <p class="str">Choose the pricing options that fits your needs</p>
+      <p class="acc">We champion flexible financing options to improve the accessibility of our programs:</p>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <p class="chn"><b>One-Time Upfront Payment </b>
+          Pay <b>KES 75K</b> one-time fee (This is the cheapest financing option)</p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <p class="chn"><b>Pay in TWO Instalments</b></p>
+          Pay <b>KES 39K every 6 weeks</b>for 2 total instalments; totals to KES 78K</p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <p class="chn"><b>Pay in THREE Instalments</b></p>
+         <p>Pay <b>KES 39K every 6 weeks</b>for 2 total instalments; totals to KES 78K</p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <p class="chn"><b>Flexi Payment Plan (Lipa Mdogo Mdogo)</b>
+          Pay <b>KES 13,750 monthly for 7 months.</b>his financing will require the student/parent (whoever will be making payments) to go through a credit vetting process by Chaptr Global. This option is ideal for students who cannot afford the stipulated upfront fee or instalment pricing options.</p>
+        </div>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is the Admission process?How long is it ?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              We have a three-step admissions process. Apply on website, attend a 15-minute interview, and pay the enrolment deposit to confirm your enrolment. Simple and straightforward. Since there could be some weeks between the time you pay the deposit and the orientation program, you’ll be invited to our Free Courses to start learning concepts that would be beneficial for your learning journey.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Is there an enrolment deposit?How much is the Deposit?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Yes, Zindua School has an enrolment deposit of KES 5,000 which is deductible from your program fees. The deposit allows us to confirm your slot in an upcoming intake. Fees will be paid (minus the deposit) once you have started the program.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Do you Offer a job guarantee? Will I get a job after Zindua
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Zindua School is extremely practical and our focus is on preparing our students for real-world problems in today’s job market. Most of our graduates get hired on the basis of their portfolio and this speaks to the quality of the skills you’ll gain at Zindua School.
+
+Unfortunately, we do NOT offer a job guarantee. However, we do offer job placement support for graduates. This involves our career module where you’ll optimise your CV/resume, LinkedIn profile, portfolio, and even learn about technical interviews. Additionally, we do connect some of our graduates to our constantly growing employer networks.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            What does the income share agreement(ISA)entail?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Our ISA allows you to pay 50% of the program and pay the rest once you start earning through an income-share. When you are not earning, you pay nothing.This financing plan is only open to learners who are in their final year of university or already have a diploma or Bachelor’s Degree. This financing plan only applies to our core programs and specialisation programs; NOT lite core programs (Data Analytics and Web Development) or our short courses (Product Management and Data Structures Algorithms)
+            </div>
+          </div>
+        </div><div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            What is my expected course schedule for a full-time or part-time option ?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              For our full-time program, you’ll be expected to attend classes in-person on three weekdays and online on two weekdays. Classes run from 9am to 2pm, with take home coding assignments on each day. You are required to commit 35-40 hours weekly if you plan to join us full-time.
   
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="head">
-      From Concept to Code :
-      <img
-        src="Banner-Software-Dev-Student-edited.jpeg"
-        alt="woman"
-        class="picture"
-      />
-      <div class="header">Join our Frontend Development Program!</div>
-    </div>
+  For our part-time program, you’ll be expected to attend online classes in the evening from Monday to Thursday. The online classes run for two hours and are slotted anytime from 6pm to 10pm based on your class group. You’ll have in-person classes on Saturdays from 10am to 2pm. You are required to commit 20-25 hours weekly to cover for class sessions and out-of-class projects. This is ideal for those with work or school commitments.
+  
+  Note: full-time programs are shorter than the part-time program as there is more time committed per week for learning. However, both programs cover the same content and have the same expected outcomes.
+            </div>
+          </div>
+      </div>
+      <div style=" background-color: antiquewhite; color: black; padding: 100px;" >
+          Join Zindua School today: Catapult your career into the dynamic world of tech!
+          We have part-time intakes every 10 weeks and full-time intakes every 6 weeks. Your gateway into a future in tech starts NOW!
+         <br> <button type="submit" class="you">Apply Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
 
-    <span class="class">
-      From fundamentals to advanced techniques, learn web development with
-      JavaScript and React.JS.
-      <strong>Transform ideas into stunning websites and web apps,</strong>
-      become a frontend engineer or web developer.
-    </span>
-    <br />
-    <button class="button">Apply Today</button>
+        <div class="card-body" style="background-color: black; display: grid;grid-template-columns: repeat(2,1fr);">
+          <div class="fir">
+          <h5 class="card-title" style="color: red; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;text-align: left;">Talk to us</h5>
+         <p style="color: white; font-family: 'Courier New', Courier, monospace;"> +254 (0) 768 342776 | hello@zinduaschool.com | 233 Owashika Road, Lavington, Nairobi, Kenya (At Circular Innovation Hub)</p>
+         <footer class="bg-body-tertiary text-center">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+              data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #3b5998;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #55acee;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #ac2bac;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <!-- Github -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
 
-    <h3 class="grey">Overview</h3>
-    <div class="info">Kickstart your frontend web development journey</div>
-    <button class="accordion">Why Learn Web Development today ?</button>
-    <div class="panel">
-      <p>
-        In today’s digital age, web development is a crucial skill that powers
-        the internet and drives online experiences. With businesses and
-        organisations increasingly relying on websites and web apps to
-        reach/serve their audience, the demand for skilled web developers has
-        never been higher. Learning web development equips you with the ability
-        to create dynamic, responsive, and visually appealing web applications,
-        enhancing user experiences and driving engagement. Whether you aim to
-        launch a tech career, build your own projects, or freelance, mastering
-        web development opens up a world of opportunities in the tech industry.
-      </p>
-    </div>
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          
+            
+          </div>
+          <!-- Copyright -->\
+           </div>
+        </footer>
+        <div class="second">
+         <div style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;"> Join our Newsletter</div>
+         <input><button type="submit" style="color: white; background-color: red; border-radius: 7px;">Subscribe</button>
+        </div>
+       
+        <!-- <div class="y"> -->
+          <!-- <div class="row">
+            <div class="col">
+             
+        <div class="third" style="display: grid; grid-template-columns: repeat(4,1fr); color: white; font-size: larger;">Quick Access</div>
+          <ul class="list">
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Apply Today</a>
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Financing Options</a>
+         <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Frequently Asked Questions(FAQ's)</a>
+         <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For High school graduates</a>
+         <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Graduates</a>
+         <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Students</a>
+         <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> For Working Proffesionals</a>
+         </div>
+        </ul>
+         <div class="col"> 
+         <ul>
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Apply Today</a>
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Financing Options</a>
+         <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Frequently Asked Questions(FAQ's)</a>
+         <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For High school graduates</a>
+         <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Graduates</a>
+         <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Students</a>
+         <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> For Working Proffesionals</a>
+      </ul>
+      <div class="col"> 
+        <ul>
+       <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Apply Today</a>
+       <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Financing Options</a>
+        <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Frequently Asked Questions(FAQ's)</a>
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For High school graduates</a>
+        <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Graduates</a>
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Students</a>
+        <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> For Working Proffesionals</a>
+     </ul>
+      </div>   
+      </div>
+      </div>
 
-    <button class="accordion">
-      What the Zindua Frontend Development Programme entails?
-    </button>
-    <div class="panel">
-      <p>
-        Zindua’s Frontend Development program is designed to take you from a
-        beginner to a proficient frontend developer. The program covers
-        essential technologies and tools, starting with HTML and CSS to build
-        the structure and style of web pages. You will then dive into
-        JavaScript, the backbone of interactive web development, learning how to
-        create dynamic content and enhance user interactions. The curriculum
-        culminates with React, a powerful JavaScript library for building user
-        interfaces, enabling you to develop sophisticated, scalable, and
-        high-performance web applications. Our hands-on approach ensures you
-        gain practical experience through real-world projects and collaborative
-        learning.
-      </p>
-    </div>
+      
+    
+      
 
-    <button class="accordion">
-      Who is the Frontend Development Program ideal for?
-    </button>
-    <div class="panel">
-      <p>
-        This program is perfect for anyone with a passion for technology and
-        creativity, regardless of their previous experience. Aspiring web
-        developers, designers looking to enhance their technical skills, and
-        professionals seeking to transition into the tech industry will all
-        benefit from this course. No prior coding experience is necessary;
-        however, a basic understanding of computer operations will be helpful.
-        Whether you’re a recent high school graduate, university graduate,
-        career changer, or entrepreneur looking to create your own web presence,
-        Zindua’s Frontend Development program provides the knowledge and skills
-        to succeed in the dynamic field of frontend development.
-      </p>
-    </div>
-    <div class="div">Curriculum</div>
-    <div class="mine">
-      What you’ll learn in our Frontend Development Program
-    </div>
-    <p class="infom">
-      Curated from our in-depth research and experience of the most in-demand
-      skills for web development career pathways, our curriculum is broken down
-      into 3 modules encompassing the following:
-    </p>
-    <button class="accordion">Module 1:HTML,CSS and Javascript</button>
-<div class="panel">
-  <p>Learn the foundations of web development with HTML, CSS, and basic JavaScript. By the end of the module, you should be able to build static websites with HTML, CSS, and add some web interactivity with JavaScript.
-<br>
-    <strong>Dev Foundations:</strong> Git version control, Linux, and CLI/Terminal foundations <br>
-    <strong>Web Foundations:</strong> learn HTML markup and how to style web content with CSS <br>
-    <strong> Advanced CSS:</strong> Learn CSS Grid, Flexbox, and the Tailwind CSS Framework <br>
-    <strong>JavaScript Basics:</strong> core concepts of JavaScript, DOM manipulation, and event handling</p>
-</div>
+      
+       -->
+      <div class="lists" style="display: grid;grid-template-columns:repeat(4,1fr); text-align: left;">
+        <ul>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Apply Today</a>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Financing Options</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Frequently Asked Questions(FAQ's)</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For High school graduates</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Graduates</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For University Students</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> For Working Proffesionals</a>
+        </ul>
+        <ul>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Software Engineering Core</a>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Data Science Core</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Data Analysis</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Data Engineering</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Frontend Development</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Data Engineering</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></a>
+        </ul>
+        <ul>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Product Management</a>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Data structures & Algorithms</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">30-day storytelling challenge</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">30-day web design challenge</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Free Intoductory Course</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Events and Masterclass</a>
+        </ul>
+        <ul>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> About us</a>
+          <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact Us</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Explore Page</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Refer&Earn</a>
+           <br> <a href="link"style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Join our Team</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Go to Zindua Lms</a>
+           <br> <a href="link" style="text-align: left; font-size: medium; color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Go to affiliate Portal</a>
+        </ul>
 
-<button class="accordion">Module:2 Advanced Javascript programming</button>
-<div class="panel">
-  <p>Learn the advanced JavaScript programming concepts to build more complex frontend apps. By the end of module, you’ll be able to build a web app with HTML, CSS, and vanilla JavaScript. <br>
-  <strong> JavaScript Objects:</strong> Learn how to build and work with JavaScript objects with ES6 syntax <br>
-  <strong> AJAX and Fetch API: </strong>Learn asynchronous JavaScript (AJAX) and Fetch API <br>
-  <strong>  Advanced JavaScript:</strong> Object-oriented programming and test-driven development <br>
-  <strong> Deployment of Dashboards:</strong> Deploy dashboards with a coherent data story with Dash by Plotly</p>
+      </div>
 
-</div>
-<button class="accordion">Module 3:React Frontend Development</button>
-<div class="panel">
-  <p>Learn the React library for frontend development. By the end of the module, you should be able to build and deploy a complete frontend application with React.JS and integrate with a NoSQL databases or Firebase. <br>
-  <strong> React Foundations:</strong>  Learn JSX and how to build React functional components
-  <strong> Intermediate React:</strong>  Event handling with React, props, and React state management
-  <strong> Advanced React:</strong>  Learn React hooks and custom hooks as well as testing
-  <strong> Frontend Essentials:</strong>  Learn how to work with Graph QL and how to deploy React Apps</p>
-</div>
-</div>
-<button class="accordion">Bonus:Data Structures and Algorithms </button>
-<div class="panel">
-  <p>All Zindua programs require students to be versed with computer programming fundamentals for building efficient code and scalable solutions. In this program, here are the essential data structures and algorithms you’ll learn:
 
-    <strong>Basic Algorithms: </strong>Learn the Big-O Notation, Search, and Sorting Algorithms <br>
-    <strong>Linear Data Structures:</strong> Learn Arrays, Hash maps, Stacks, Queues, Linked Lists, Trees, and Graphs <br>
-    <strong>Non-Linear Data Structures:</strong> Trees, Graphs, and common algorithms involving trees/graphs such as pathfinding <br>
-    <strong>Note that this is a Lite core program therefore, students will not get into advanced algorithms i.e. Dynamic Programming, and Greedy Algorithms which are covered in the longer/advanced Software Engineering Core.</p>
-</div>
-</div>
-<button class="accordion">Final Capsule:Web Development Capstone </button>
-<div class="panel">
-  <p>To graduate the program, a student will be required to <strong>complete an end-to-end web development project</strong> involving building and deploying a web app with JavaScript and React.JS as well as connecting to a database or data source through GraphQL, REST API, or direct connections with a NoSQL database. Students have freedom to choose their final project based on their personal/career interests.</p>
-  </div>
-<div class="diver">Zindua your career in tech. Join our Frontend Development program today! <button class="id"> Apply Now</button></div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
 </html>
